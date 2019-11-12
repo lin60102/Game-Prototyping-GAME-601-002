@@ -1,0 +1,57 @@
+! Blurb file created by Inform build 6M62
+
+status "D:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.inform\Build\StatusCblorb.html"
+
+
+! Identification
+
+project folder "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.inform"
+release to "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.materials\Release"
+
+! Blorb instructions
+
+storyfile leafname "adventure time.gblorb"
+storyfile "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.inform\Build\output.ulx" include
+ifiction "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.inform\Metadata.iFiction" include
+cover "D:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 1 "D:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+release file "D:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+release file "D:\Program Files (x86)\Inform 7\Internal\Miscellany\Small Cover.jpg"
+
+! Placeholder variables
+
+placeholder [IFID] = "1D5EE91F-9CF0-43F2-8816-EB35BDA099A6"
+placeholder [RELEASE] = "1"
+placeholder [YEAR] = "2019"
+placeholder [TITLE] = "adventure time"
+placeholder [AUTHOR] = "Ken"
+placeholder [BLURB] = "A work of interactive fiction."
+
+! Other material to release
+
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "adventure time.gblorb.js"
+template path "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.materials\Templates"
+template path "C:\Users\lin60\Documents\Inform\Templates"
+template path "D:\Program Files (x86)\Inform 7\Internal\Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.inform\Build\output.ulx" to "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.materials\Release\interpreter\adventure time.gblorb.js"
+
+! Website instructions
+
+template path "D:\Game-Prototyping-GAME-601-002\adventure time_by ken.materials\Templates"
+template path "C:\Users\lin60\Documents\Inform\Templates"
+template path "D:\Program Files (x86)\Inform 7\Internal\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line3"><img border=0 src=inform:/doc_images/Reveal.png></a>||
+status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc401.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc412.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
+status alternative ||Using 'Release along with the introductory postcard'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||

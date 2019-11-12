@@ -1,5 +1,7 @@
 "adventure time" by Ken
 
+Release along with an interpreter.
+
 The player has a number called love. The love of the player is 0.
 
 Instead of asking Princess Bubblegum about "love you" when the love of the player is greater than 99 :
