@@ -40,4 +40,3 @@ To say a piece of Lava chocolate:
 		try the player giving a piece of Lava chocolate to Princess Bubblegum;
 	else:
 		say "I love a piece of Lava chocolate. Do you have one? ".
-		
