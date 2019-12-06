@@ -22,7 +22,7 @@ var container = $('#youtubetunes');
 container.empty();
 container.append('<iframe src="https://www.youtube.com/embed/' + id +
 '?autoplay=1&amp;loop=1&amp;playlist='+ id +
-'" style="visibility:hidden;width:500px;height:500px;position:absolute;top:-1000px;left:-1000px;"></iframe>');
+'" volume="30" style="visibility:hidden;width:500px;height:500px;position:absolute;top:-1000px;left:-1000px;"></iframe>');
 } else {
 console.log('already playing');}},
 stop: function(){
