@@ -172,11 +172,11 @@ Q. What is the force per unit area?
 {(set: $at_diff to it +25)
 (set: $science to it +10)}
 (if:$at_e&lt;=0)[
-(set: $at_n to it -1)
+{(set: $at_n to it -1)}
 ](else:)[
-(set: $at_e to it -1)
+{(set: $at_e to it -1)}
 ]
-(set: $random to (random: 1,($at_h+$at_n+$at_e)))
+{(set: $random to (random: 1,($at_h+$at_n+$at_e)))}
 (if:$random&lt;=$at_e)[
 Q. What chess piece has the lowest rank?
 &lt;img src=&quot;https://i.imgur.com/TowqI6g.png&quot; width=&quot;600&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
