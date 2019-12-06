@@ -34,17 +34,17 @@ window.YouTubeTunes = YouTubeTunes;}</script><tw-passagedata pid="1" name="Untit
 &lt;img src=&quot;https://i.imgur.com/uPmHkhI.jpg&quot; width=&quot;900&quot; height=&quot;500&quot; alt=&quot;Two foxes&quot;&gt;
 [Hello $name, this is a story about a transfer student and love.]
 [Before starting game, there are four questions to estimate your type.]
-[[Get started-&gt;Start]]</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="423,332.5" size="100,100">(set: $science to 0)
+[[Get started-&gt;Start]]</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="423,332.5" size="100,100">{(set: $science to 0)
 (set: $english to 0)
 (set: $math to 0)
 (set: $sense to 0)
 (set: $at_diff to 0)
 (set: $at_e to 2)
 (set: $at_n to 1)
-(set: $at_h to 1)
+(set: $at_h to 1)}
 (css: &quot;font-size: 250%;&quot;+&quot;background-color:blue&quot;)+(text-style: &quot;expand&quot;)+(font:&quot;Courier New&quot;)[Admission Test 1(Math)]
 &lt;img src=&quot;https://i.imgur.com/iTwZPTy.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
-(set: $random to (random: 1,($at_h+$at_n+$at_e)))
+{(set: $random to (random: 1,($at_h+$at_n+$at_e)))}
 (if:$random&lt;=$at_e)[
 Q. Find fraction F with denominator less than 8 such that 2/8 + F = 1
 [[A. 3/4-&gt;Q1right]]
@@ -69,10 +69,10 @@ Q. The price of a pair of sneakers was $80 for the last six months of last year.
 
 </tw-passagedata><tw-passagedata pid="3" name="Q1right" tags="" position="344,476.5" size="100,100">(css: &quot;font-size: 250%;&quot;+&quot;background-color:blue&quot;)+(text-style: &quot;expand&quot;)+(font:&quot;Courier New&quot;)[Admission Test 2(English)]
 &lt;img src=&quot;https://i.imgur.com/iTwZPTy.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
-(set: $at_diff to it +25)
+{(set: $at_diff to it +25)
 (set: $math to it +10)
 (set: $at_e to it -1)
-(set: $random to (random: 1,($at_h+$at_n+$at_e)))
+(set: $random to (random: 1,($at_h+$at_n+$at_e)))}
 (if:$random&lt;=$at_e)[
 Q. Complete the sentence with the correct adjective.
 Who is the ____ runner in the world?
@@ -97,8 +97,8 @@ Q. Microscopes make small things appear larger than ________.
 [[D. they really are-&gt;Q2right]]
 ]</tw-passagedata><tw-passagedata pid="4" name="Q1wrong" tags="" position="487,476.5" size="100,100">(css: &quot;font-size: 250%;&quot;+&quot;background-color:blue&quot;)+(text-style: &quot;expand&quot;)+(font:&quot;Courier New&quot;)[Admission Test 2(English)]
 &lt;img src=&quot;https://i.imgur.com/iTwZPTy.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
-(set: $at_e to it +1)
-(set: $random to (random: 1,($at_h+$at_n+$at_e)))
+{(set: $at_e to it +1)
+(set: $random to (random: 1,($at_h+$at_n+$at_e)))}
 (if:$random&lt;=$at_e)[
 Q. Complete the sentence with the correct adjective.
 I gave my bike a wash and now it looks ____.
@@ -122,10 +122,10 @@ Q. A singer&#39;s struggle to succeed in popular music is the kind of story ____
 [[D. about which-&gt;Q2right]]
 ]</tw-passagedata><tw-passagedata pid="5" name="Q2right" tags="" position="323,635.5" size="100,100">(css: &quot;font-size: 250%;&quot;+&quot;background-color:blue&quot;)+(text-style: &quot;expand&quot;)+(font:&quot;Courier New&quot;)[Admission Test 3(Science)]
 &lt;img src=&quot;https://i.imgur.com/iTwZPTy.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
-(set: $at_diff to it +25)
+{(set: $at_diff to it +25)
 (set: $english to it +10)
 (set: $at_e to it -1)
-(set: $random to (random: 1,($at_h+$at_n+$at_e)))
+(set: $random to (random: 1,($at_h+$at_n+$at_e)))}
 (if:$random&lt;=$at_e)[
 Q. When a plant performs the process of photosynthesis what is produced?
 [[A. Carbon dioxide-&gt;Q3wrong]]
@@ -147,8 +147,8 @@ Q. Which of these organs aid in urine production?
 [[D. Kidney-&gt;Q3right]]
 ]</tw-passagedata><tw-passagedata pid="6" name="Q2wrong" tags="" position="506,636.5" size="100,100">(css: &quot;font-size: 250%;&quot;+&quot;background-color:blue&quot;)+(text-style: &quot;expand&quot;)+(font:&quot;Courier New&quot;)[Admission Test 3(Science)]
 &lt;img src=&quot;https://i.imgur.com/iTwZPTy.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
-(set: $at_e to it +1)
-(set: $random to (random: 1,($at_h+$at_n+$at_e)))
+{(set: $at_e to it +1)
+(set: $random to (random: 1,($at_h+$at_n+$at_e)))}
 (if:$random&lt;=$at_e)[
 Q. You see your reflection in a mirror because:
 [[A. light is absorbed-&gt;Q3wrong]]
@@ -169,8 +169,8 @@ Q. What is the force per unit area?
 [[D. Pressure-&gt;Q3right]]
 ]</tw-passagedata><tw-passagedata pid="7" name="Q3right" tags="" position="318,768.5" size="100,100">(css: &quot;font-size: 250%;&quot;+&quot;background-color:blue&quot;)+(text-style: &quot;expand&quot;)+(font:&quot;Courier New&quot;)[Admission Test 4(Common Sense)]
 &lt;img src=&quot;https://i.imgur.com/iTwZPTy.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
-(set: $at_diff to it +25)
-(set: $science to it +10)
+{(set: $at_diff to it +25)
+(set: $science to it +10)}
 (if:$at_e&lt;=0)[
 (set: $at_n to it -1)
 ](else:)[
@@ -198,8 +198,8 @@ Q. Exposure In Photography Refers To What?
 [[D. The Contrast-&gt;Q4wrong]]
 ]</tw-passagedata><tw-passagedata pid="8" name="Q3wrong" tags="" position="510,766.5" size="100,100">(css: &quot;font-size: 250%;&quot;+&quot;background-color:blue&quot;)+(text-style: &quot;expand&quot;)+(font:&quot;Courier New&quot;)[Admission Test 4(Common Sense)]
 &lt;img src=&quot;https://i.imgur.com/iTwZPTy.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
-(set: $at_e to it +1)
-(set: $random to (random: 1,($at_h+$at_n+$at_e)))
+{(set: $at_e to it +1)
+(set: $random to (random: 1,($at_h+$at_n+$at_e)))}
 (if:$random&lt;=$at_e)[
 Q. If its 4:45pm in LA what time is it in New York?
 [[A. 4:45pm-&gt;Q4wrong]]
@@ -218,15 +218,15 @@ Q. What Does CPR Stand For?
 [[B. Cardio Personnel Rescue-&gt;Q4wrong]]
 [[C. Creative Pressure Relaxation-&gt;Q4wrong]]
 [[D. Cardiopulmonary Resuscitation-&gt;Q4right]]
-]</tw-passagedata><tw-passagedata pid="9" name="Q4right" tags="" position="306,920.5" size="100,100">(set: $at_diff to it +25)
-(set: $sense to it +10)
+]</tw-passagedata><tw-passagedata pid="9" name="Q4right" tags="" position="306,920.5" size="100,100">{(set: $at_diff to it +25)
+(set: $sense to it +10)}
 &lt;img src=&quot;https://i.imgur.com/BkUYgUQ.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
 [Finally, Admission Test is end]
 &lt;img src=&quot;https://i.imgur.com/weycvgx.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
 [??: ](css:&quot;color:#39C5BB&quot;)[$name, welcome to the Lovely high school. I am Hatsune Miku, you can just call me miku.]
 [Miku: ](css:&quot;color:#39C5BB&quot;)[I am the President of The Student Council. you are the first male student because of the new policy]
 [Miku: ](css:&quot;color:#39C5BB&quot;)[And teacher wants me to tell you to check your grade of the admission test]
-[[Check grade-&gt;checkgrade]]</tw-passagedata><tw-passagedata pid="10" name="Q4wrong" tags="" position="506,925.5" size="100,100">&lt;img src=&quot;https://i.imgur.com/BkUYgUQ.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
+[[Check grade-&gt;checkgrade]]</tw-passagedata><tw-passagedata pid="10" name="Q4wrong" tags="" position="507,924.5" size="100,100">&lt;img src=&quot;https://i.imgur.com/BkUYgUQ.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
 [Finally, Admission Test is end]
 &lt;img src=&quot;https://i.imgur.com/weycvgx.png&quot; width=&quot;1000&quot; height=&quot;400&quot; alt=&quot;Two foxes&quot;&gt;
 [??: ](css:&quot;color:#39C5BB&quot;)[$name, welcome to the Lovely high school. I am Hatsune Miku, you can just call me miku.]
